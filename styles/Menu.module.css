@@ -1,0 +1,53 @@
+.MenuContainer{
+    display: flex;
+    width: 96%;
+    margin:auto;
+    justify-content:space-between;
+}
+.MenuItems{
+    width: 14%;
+    background-color: #32609f69;
+    height: 88vh;
+}
+.MenuPhoto{
+    text-align:center;
+}
+.searchContainer{
+    text-align:center;
+}
+.searchContainer input{
+    text-align:center;
+    padding: 3%;
+}
+.item{
+    background-color: rgb(252 248 248);
+    width: 83%;
+    margin: auto;
+    text-align: center;
+    margin-top: 45px;
+    padding: 1%;
+    border-radius: 3%;
+    border-left: 6px solid black;
+}
+.item:hover{
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+.itemsDetails{
+    width: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 86vh;
+    overflow-y: scroll;
+}
+.itemsDetails::-webkit-scrollbar{
+    visibility: hidden;
+}
+.fooditem{
+    width: 31%;
+    text-align: center;
+    padding: 1%;
+    margin-left: 20px;
+    margin-top: 18px;
+}

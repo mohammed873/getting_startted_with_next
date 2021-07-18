@@ -1,0 +1,114 @@
+.bookingContainer{
+    display: flex;
+}
+.imageContainer , .formContainer{
+    width: 50%;
+    text-align: center;
+}
+.formContainer{
+    margin-top: 15px;
+}
+.imageContainer img{
+    width: 78%;
+    height: 76VH;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+.divflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  .container {
+    width: 75vh;
+    height: auto;
+    box-shadow: 0 4px 16px rgb(168 174 161), 0 5px 15px rgb(0 0 0 / 1%);
+    padding: 2em;
+    border-radius: 5px;
+    background-color: white;  
+  }
+  .container h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: .6em;
+    font-weight: 900;
+    color: #615e5e;
+  }
+  .container h1:after {
+    content: ' ';
+    display: block;
+    width: 35%;
+    margin: 15px auto 0;;
+    
+    border-top: 1px solid #9db991;
+  }
+  
+  .formgroup {
+    transition: all .3s;
+    
+  }
+
+  .formcontrol {
+    box-shadow: none;
+    background-color: rgba(0,0,0,.03);
+    border-radius: 0;
+    border: 3px solid #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all .5s;
+    padding: 6px;
+  }
+  
+  .formcontrol::placeholder {
+    color: transparent;
+  }
+  
+  .formcontrol:focus {
+    box-shadow: none;
+    outline:none;
+    border-color: orange;
+  }
+  .formgroup:focus-within {
+    transform: scale(1.05,1.05); 
+  }
+  .formcontrol:focus + .form-label,
+  .formcontrol:not(:placeholder-shown) + .form-label {
+    transform: translateY(-2.5em) scale(0.7);
+  }
+  
+  .formgroup input[type=submit] {
+    padding: 7px 20px;
+    font-weight: 700;
+    border-radius: 18px;
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0;
+    background-color: #9db991;
+  }
+  .formgroup p{
+      text-align:start;
+  }
+  .bookBtn{
+    padding: 3%;
+    border: none;
+    border-radius: 5%;
+    float: left;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  

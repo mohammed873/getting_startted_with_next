@@ -1,0 +1,75 @@
+.titleContainer{
+  text-align: center;
+  margin-top: 58px;
+}
+.title{
+  font-size: 40px;
+  color: #7b6363;
+}
+.btnContainer{
+  display: flex;
+  width: 21%;
+  margin: auto;
+  justify-content: space-around;
+}
+.btn{
+  padding: 3%;
+  font-size: 18px;
+  font-family: serif;
+  background-color: #f8e5dc;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0px 0px 0px 1px navajowhite;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color:white;
+}
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+.btn a:hover{
+  color: white;
+}
+.homeMenu {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  justify-content: space-evenly;
+}
+.card{
+  background-color: #32609f69;
+  width: 24%;
+  height: 45vh;
+  border-radius: 100px 15px 100px 15px;
+  box-shadow: 1px 0px 0px 1px wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.imageContainer{
+  text-align: center;
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.card h1{
+  text-align: center;
+}
+.card p{
+  text-align: center;
+}
