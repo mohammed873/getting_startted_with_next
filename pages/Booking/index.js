@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/booking.module.css'
 
@@ -15,7 +16,7 @@ export default function Booking() {
        <main>
          <div className={styles.bookingContainer}> 
            <div className={styles.imageContainer}>
-             <img src="/pic.png" alt="Booking image"  />
+             <Image width={440} height={200} src="/pic.png" alt="Booking image"  />
            </div>
            <div className={styles.formContainer}>
            <div className={styles.divflex}>

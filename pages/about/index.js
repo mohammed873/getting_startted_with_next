@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../styles/about.module.css'
 import Link from 'next/link'
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -19,14 +20,14 @@ export default function About() {
        </div>
        <div className={styles.detailsContainer}>
           <div className={styles.imageContainer}>
-            <img src="/pic1.jpg" alt="header image (food)" />
+            <Image width={700} height={430} src="/pic1.jpg" alt="header image (food)" />
           </div>
           <div className={styles.descriptionContainer}>
              <h3>HalssonFood</h3>
               <p>we consider ourselves , one of the best resturants in canda , we are in this buisness 14 years now , we only hire the best , and we only deliver good food quality.</p>
                <p>Words are not enough to descripe how good we are , feel free to <Link href="/menu"><a>explore our menu</a></Link>.</p>
                <div className={styles.subImageContainer}>
-                 <img  src="/pic2.jpg" alt="food" />
+                 <Image width={480} height={320}  src="/pic2.jpg" alt="food" />
                </div>
           </div>
        </div>

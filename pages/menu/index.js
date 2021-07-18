@@ -24,7 +24,7 @@ const onChange =  (e) =>{
 
 useEffect(() => {
   getData()
-}, [squery])
+}, [])
 
   return (
     <>
